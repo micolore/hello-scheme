@@ -1,0 +1,62 @@
+(define (square  x) ( * x x))
+
+(square (square 3))
+
+  
+(define  (sum-of-square x y)
+         (+(square x)(square y)))
+
+(sum-of-square 3 4)
+
+
+(define (f a)
+        (sum-of-square(+ a 1)(* a 2)))
+
+(f 5) ;136
+
+
+(cons 1 2)
+
+(cons 3 (cons 1 2))
+
+(3 1 . 2)
+
+(cons #\a (cons 3 "hello"))
+
+(cons (cons 0 1 )(cons  2 3))
+
+'()
+
+(list 1 2)
+
+(list 0)
+
+(list '(1 2) '( 3 4))
+
+(car '(1 2 3 4))
+
+(cdr '(1 2 3 4))
+
+
+(define vhello "hello world scheme")
+
+(define  fhello (lamda ()
+         "hello world!"))
+(define hello (lamba (name)
+         (string-append "hello "  name "!")))
+
+(define sum3
+ (lambda (a b c)
+         (+ a b c)))
+
+(sum3 1 2 3)
+
+(hello "lucy")
+
+(define (hello name)
+        (string-append "hello " name "!"))
+
+(define (sum3 a b c)
+        (+ a b c))
+
+
